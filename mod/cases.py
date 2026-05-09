@@ -1,5 +1,5 @@
-def cases(s:str):
-    each = s.split(" ")
+def cases1(text:str):
+    each = text.split(" ")
     for i in range((len(each)- 1), 0, -1):
         if each[i] == "(hex)" and i > 0:
             each[i-1] = str(int(each[i-1], 16))
